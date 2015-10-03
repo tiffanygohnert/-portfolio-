@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Mileage</title>
+
+<script type="text/javascript">
+/* Write a defining table and a JavaScript program to compute 
+ * the mileage of a vehicle. Your program should allow the user 
+ * to enter the beginning and ending odometer readings and the 
+ * number of gallons of gasoline used and should output the mileage
+ * in miles per gallon. Your program should correctly handle real numbers.
+ */
+ 
+/* Defining Table: 
+ * Input: User inputs their beginning odometer , end odometer, and gallons of gasoline used. 
+ * Processing: computes mileage of vehicle.  
+ * Output: mileage of vehicle
+ */
+function Mileage() {
+    // Get the information
+    var BeginningOdometer = parseFloat(document.getElementById('BeginningOdometer').value);
+    var EndOdometer = parseFloat(document.getElementById('EndOdometer').value);
+    var GallonsUsed = parseFloat(document.getElementById('GallonsUsed').value);
+	
+    
+
+    // Compute the Mileage 
+    var mileage = ((EndOdometer- BeginningOdometer) / GallonsUsed);
+	var new2 = 1 + 3 * 7 % 4 - -2; 
+    
+
+    // Display the Mileage to the user.
+    document.getElementById('output').innerHTML = mileage;
+	document.getElementById('one').innerHTML = new2;
+}
+</script>
+</head>
+
+<body>
+Please enter the following information to find your cars mileage:<br>
+Beginning Odometer <input type="text" id="BeginningOdometer" size="3"> <br> 
+   End Odometer<input type="text" id="EndOdometer" size="3"><br>  
+Gallons Used <input type="text" id="GallonsUsed" size="3">  
+<button type="button" onclick="Mileage()">Mileage</button>  
+<div id="output"></div>  
+
+</body>
+</html>
