@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Swing Time of a Pendulum</title>
+<script type="text/javascript">
+
+// Your JavaScript function belongs here.
+function pendulum() {
+
+// Get length from the user
+    var length = parseFloat(document.getElementById('length').value);
+//var time2 = length * 2 ; 
+	var time1 = 2* Math.PI;
+	var time2 = time1 * Math.sqrt(length/9.81); 
+	//display time to user
+	 document.getElementById('time').innerHTML = time2;
+	 }
+</script>
+</head>
+
+<body>
+    <h1>Swing Time of a Pendulum</h1>
+    Length (meters) <input type="text" id="length" size="3"><br>
+    <button type="button" onclick="pendulum()">Compute Swing Time</button><br>
+    Time (seconds) <div id="time"></div>
+</body>
+</html>
