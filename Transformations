@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+       
+    <style>
+body {
+  padding-top: 60px;
+}
+
+.hover {
+  cursor: pointer;
+}
+.hover,
+img {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px #aaa;
+  -moz-box-shadow: 5px 5px 5px #aaa;
+  box-shadow: 5px 5px 5px #aaa;
+  margin-bottom: 10px;
+}
+
+
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#myDiv {
+            -ms-transform: rotate(20deg); /* IE 9 */
+            -webkit-transform: rotate(20deg); /* Safari */
+            transform: rotate(20deg); /* Standard syntax */
+        }
+          #transDemo4 {
+          width:400px;
+          height:190px;
+          margin:0 auto 10px;
+          border:1px #aaa solid;
+          padding:10px;
+        }
+
+
+        #transDemo4 div:not(.clear) {
+          -webkit-transition:all 2s ease-in-out;
+          -moz-transition:all 2s ease-in-out;
+          -ms-transition:all 2s ease-in-out;
+          transition:all 2s ease-in-out;
+
+
+
+          width:70px;
+          height:130px;
+          margin:10px 20px;
+          padding:10px;
+          border:1px blue solid;
+          float:left;
+        }
+
+     
+      #transDemo4:hover #rotateX {
+        transform:rotateX(360deg)scale(2,2);
+        box-shadow: 25px 25px 25px black;
+      }
+      #transDemo4:hover #rotateY {
+        transform:rotateY(180deg)skewX(20deg);
+        background-color:red;
+        
+      }
+      #transDemo4:hover #rotateZ {
+        transform:rotateZ(180deg)scale(.5,.5);
+      }
+</style>
+
+
+
+   
+ 
+    </head>
+    
+    <body>
+       
+        
+        
+        <h1 style="color:blue">Shared Code</h1>
+        <div>
+            This a normal div element.
+            </div>
+
+            <div id="myDiv">
+            The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 20 degrees.
+            </div>
+
+        
+       
+        <br>
+        <br>
+        
+        <h1 style="color:blue">Experimental Code</h1>
+        <div id="transDemo4" class="shadow hover" style="background-color:blue;float:left">
+        <div id="rotateX">rotateX</div>
+        <div id="rotateY">rotateY</div>
+        <div id="rotateZ">rotateZ</div>
+        <p style="text-align:center;color:white">Hover me</p>
+        </div>
+    </body>
+</html>
