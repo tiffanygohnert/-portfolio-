@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Check Out</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="newcss.css" rel="stylesheet" type="text/css" media="screen">
+        <script type="text/javascript" src="213.05.PonderProblem.js"></script>
+    </head>
+    <body onload="loaded()">
+           <nav>
+                <div class="nav">
+                
+  <ul id="drop-nav">
+      
+  <li> <a href="week7.html">Home</a></li>
+  <li> <a href="patterns.html">Patterns</a></li>
+    <li> <a href="checkOut.html">Check Out</a></li> </ul>
+                   
+                </div>
+   </nav>
+          <main role="main" id="page-main">
+            <div id="contact-form" class="clearfix">
+                <p>
+    <h4>Contact us </h4>
+            
+   <div class='center' id="description">              
+       <p> Ready to check out? Check the boxes of the patterns you'd like to purchase.</p>
+            
+            
+            
+            </div>   
+           <form name="htmlform" method="post" action="html_form_send.php" onsubmit="submitDone()" >
+<table width="450px">
+ <tr>
+ <td valign="top">
+  <label for="babyHat">Baby Hat: </label>
+ </td> 
+ <td valign="top">
+Quantity:  
+  <input  type="text" name="babyHat" maxlength="30" size="2" onKeyUp="validate(this.value, 'babyHat');">
+  <span class='babyHat' style='color:red'>Invalid Quantity</span>  
+ </td>
+</tr> 
+
+<tr>
+ <td valign="top">
+  <label for="teddyBear">Teddy Bear: </label>
+  <input type="checkbox" id="myCheck">
+ </td> 
+ <td valign="top">
+Quantity:  
+  <input  type="text" name="teddyBear" maxlength="30" size="2" onKeyUp="validate(this.value, 'teddyBear');">
+  <span class='teddyBear' style='color:red'>Invalid Quantity</span>  
+ </td>
+</tr> 
+
+<tr>
+ <td valign="top">  
+  <label for="elephant">Elephant: </label>
+  <input type="checkbox" id="myCheck">
+ </td> 
+ <td valign="top">
+Quantity:  
+  <input  type="text" name="elephant" maxlength="30" size="2" onKeyUp="validate(this.value, 'elephant');">
+  <span class='elephant' style='color:red'>Invalid Quantity</span>  
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="monkeyHat">Monkey Hat: </label>
+  <input type="checkbox" id="myCheck">
+ </td> 
+ <td valign="top">
+Quantity:  
+  <input  type="text" name="monkeyHat" maxlength="30" size="2" onKeyUp="validate(this.value, 'monkeyHat');">
+  <span class='monkeyHat' style='color:red'>Invalid Quantity</span>  
+ </td>
+</tr>
+
+
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name: *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30" id="first_name" onblur="myFunction( 'first_name')">
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30" id="last_name" onblur="myFunction('last_name')">
+ </td>
+</tr>
+<tr>
+    
+<tr>
+ <td valign="top"">
+  <label for="address">Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="address" maxlength="50" size="30" id="address" onblur="myFunction('address')">
+ </td>
+</tr>
+<tr>
+    
+ <td valign="top">
+  <label for="email">Email: *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number: </label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="creditCard">Credit Card Type: *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="creditCard" maxlength="30" size="30" id="creditCard" onblur="myFunction('creditCard')">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="creditNumber">Credit Card Number: *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="creditNumber" maxlength="30" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="creditDate">Credit Card Expiration Date: *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="creditDate" maxlength="30" size="30">
+ </td>
+</tr>
+
+
+<tr>
+ <td colspan="2" style="text-align:center">
+  <button type="button" onclick="total(document.getElementById('htmlform').elements.namedItem('babyHat').value)">Your Total</button>
+  <input type="submit" value="Submit" >  
+  <button type="button" onclick="reset()">Reset</button>  
+ </td>
+</tr>
+</table>
+</form>
+</div> 
+        </main>
+        
+    </body>
+</html>
