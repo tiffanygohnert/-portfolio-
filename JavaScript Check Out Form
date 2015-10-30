@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="newcss.css" rel="stylesheet" type="text/css" media="screen">
-        <script type="text/javascript" src="213.05.PonderProblem.js"></script>
+        <script type="text/javascript" src="javaFile.js"></script>
     </head>
     <body onload="loaded()">
            <nav>
